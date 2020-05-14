@@ -8,4 +8,21 @@
   3. Display the tallest height value on the page.
 */
 
+
 // YOUR CODE HERE
+
+
+const heights = [14923, 13430, 14900, 29000]
+
+
+let tallestHeight = 0
+let position = 0
+while (position < heights.length) {
+   const currentHeight = (heights)[position]
+   if (currentHeight > tallestHeight) {
+      tallestHeight = currentHeight
+   }
+   position += 1
+}
+
+alert(tallestHeight)
